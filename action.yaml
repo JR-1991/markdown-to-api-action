@@ -1,4 +1,5 @@
 name: Push File
+description: Generates an API from a single or multiple Markdown files hosted in the directory "./specifications/" and pushes the results.
 
 on: push
 

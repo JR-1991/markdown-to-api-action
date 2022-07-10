@@ -3,6 +3,10 @@ description: Generates an API from a single or multiple Markdown files hosted in
 
 on: push
 
+inputs:
+  api-name:
+    description: 'Name of the resulting API'
+    required: true
 jobs:
   api-generation:
     runs-on: ubuntu-latest

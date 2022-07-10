@@ -23,12 +23,12 @@ jobs:
         run: python3 -m pip install git+https://github.com/JR-1991/software-driven-rdm.git
 
       - name: generate api
-        run: softdata generate --path ./specifications/ --out . --name ${{ secrets.API_NAME }}
+        run: softdata generate --path ./specifications/ --out . --name ${{ inputs.api-name }}
 
       - name: Push source code
         run: |
           if [[ `git status --porcelain` ]]; then
-            git add ${{ secrets.API_NAME }}
+            git add ${{ inputs.api-name }}
             git config --global user.name 'sdRDM Bot'
             git config --global user.email 'sdRDM@bot.com'
             git commit -am "API update"

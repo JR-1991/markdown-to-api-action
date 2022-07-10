@@ -1,4 +1,4 @@
-name: Push File
+name: Markdown-2-sdRDM-API
 description: Generates an API from a single or multiple Markdown files hosted in the directory "./specifications/" and pushes the results.
 
 on: push
